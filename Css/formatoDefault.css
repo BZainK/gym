@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+    }    
+h1{
+    font-family: 'Unica One', cursive;
+    /*font-family: arial black;*/
+    font-size: 50px;
+    color:black;
+    margin: 0px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}

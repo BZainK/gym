@@ -1,0 +1,39 @@
+<?php
+
+@include 'config.php';
+
+session_start();
+if(!isset($_SESSION['user_name'])){
+   header('location:../PHP/login.php');
+}
+
+
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://media.giphy.com/media/26uf3neMcvqZvdfsk/giphy.gif"><!-- Icono, pero no sirve, arreglar-->
+    <title>IRON GYM</title>
+    <link rel="stylesheet" href="../Css/estilos.css">
+    <link rel="stylesheet" href="../Css/formatoDefault.css">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+</head>
+<body>
+   <nav class="Navigator"><!--menú de navegación-->
+            <ul class="Navigatorul">
+                <li class="Option"><a href="../index.html" class="Navlink">Inicio</a></li>
+                <li class="Option"><a href="Perfil.html" class="Navlink">Perfíl</a></li>
+                <li class="Option"><a href="Membresias.html" class="Navlink">Membresias</a></li>
+                <li class="Option"><a href="Servicios.html" class="Navlink">Servicios</a></li>
+                <li class="Option"><a href="Equipo.html" class="Navlink">Equipo</a></li>
+                <li class="Option"><a href="Nosotros.html" class="Navlink">Nosotros</a></li>
+                <li class="Option"><a href="SingIn.html" class="Navlink">Cerrar Sesión</a></li>
+            </ul>
+    </nav>
+        <h1>Perfil</h1>
+    <footer class="Footer">
+        <h2 style="vertical-align:middle; text-align:center">Derechos Reservados Por Iron Gym 2017-2022</h2>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300");
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #000d1a;
+    font-family: sans-serif;
+}
+
+.box {
+    width: 300;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: block;
+    align-items: center;
+    background: #000d1a;
+}
+
+.login{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: block;
+    align-items: center;
+    background: #000d1a;
+}
+
+.login:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -1;
+}
+
+.login:after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.login:before, .login:after{
+    background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+
+.box h1{
+    color: gray;
+    text-transform: uppercase;
+    font-family: 'Unica one', cursive;
+    margin: 0;
+    font-size: 3cm;
+    text-shadow: 0 0 2px #ff005b;
+    position: relative;
+    letter-spacing: 8px;
+}
+
+.box h1:after{
+    content: attr(data-text);
+    top: 0;
+    left: 0;
+    padding: 0 60px;
+    position: absolute;
+    z-index: -1;
+    color: #f55b02;
+    filter:blur(15px);
+}
+
+.box h1:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fe3a3a;
+    z-index: -2;
+    opacity: .5;
+    filter: blur(40px);
+}
+
+.box input[type = "text"], .box input[type = "Password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid white;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    box-shadow: 0 0 5px white,
+                0 0 25px white;
+    letter-spacing: 4px;
+}
+
+.box input[type="text"]:focus, .box input[type = "Password"]:focus{
+    box-shadow: 0 0 5px white,
+                0 0 25px white;
+    width: 230px;
+}
+
+.box button[type = "button"]{
+    border: 2px solid #2ecc71;
+    background: none;
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    letter-spacing: 4px;
+    border-radius: 25px;
+    transition: 0.25%;
+    cursor: pointer;
+    box-shadow: 0 0 5px #2ecc71,
+                0 0 25px #2ecc71;
+}
+
+.box button[type = "button"]:hover{
+    width: 202px;
+    background: #2ecc71;
+
+}
